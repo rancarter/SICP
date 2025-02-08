@@ -19,10 +19,6 @@ function add(a, b) {
   return a + b;
 }
 
-function multiply(a, b) {
-  return a + b;
-}
-
 function square(a) {
   return a * a;
 }
@@ -33,10 +29,6 @@ function inc(a) {
 
 function divides(a, b) {
   return b % a === 0;
-}
-
-function is_prime(n) {
-  return n === smallest_divisor(n);
 }
 
 function smallest_divisor(n) {
@@ -52,10 +44,18 @@ function find_divisor(n, test_divisor) {
 }
 
 function sum_primes_squares(b) {
+  function is_prime(n) {
+    return n === smallest_divisor(n);
+  }
+
   return filtered_accumulate(add, is_prime, 0, square, 2, inc, b);
 }
 
 function product_whatever(n) {
+  function multiply(a, b) {
+    return a + b;
+  }
+
   function predicate(i) {
     return gcd(i, n) === 1;
   }
@@ -72,4 +72,4 @@ function product_whatever(n) {
 }
 
 console.log(sum_primes_squares(10)); // 87
-console.log(product_whatever(10)); // 27 - not sure it is correct 
+console.log(product_whatever(10)); // 27 - not sure it is correct
