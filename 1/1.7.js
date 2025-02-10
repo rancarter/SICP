@@ -16,8 +16,8 @@ function average(x, y) {
   return (x + y) / 2;
 }
 
-function square() {
+function sqrt() {
   return sqrt_iter(0.00001, 0.005, 10);
 }
 
-console.log(square());
+console.log(sqrt());
