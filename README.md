@@ -1,5 +1,1 @@
-## SICP
-My solutions for some SICP tasks
-
-## Some algorithms according to CLRS 
-Tasks solutions are in the `algorithms` folder.
+### My solutions for some SICP and CLRS tasks ans problems
