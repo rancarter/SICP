@@ -1,1 +1,1 @@
-### My solutions for some SICP and CLRS tasks ans problems
+My solutions for some SICP and CLRS tasks ans problems
